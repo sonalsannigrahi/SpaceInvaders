@@ -1,0 +1,80 @@
+#hero {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 48.5%;
+  top: 75.5%;
+  margin: 0;
+  border: 0px;
+}
+
+div#missiles {
+  position: absolute;
+}
+
+.missile1 {
+  width: 3px;
+  height: 20px;
+  position: absolute;
+}
+
+.missile2 {
+width: 7px;
+height: 20px;
+color: #d31818;
+position: absolute;
+}
+
+div#enemies {
+  position: absolute;
+}
+
+.enemy {
+  width: 60px;
+  height: 50px;
+  background-image: url('assets/invader.png');
+  position: fixed;
+  z-index:2;
+}
+
+
+#score {
+  display: block;
+  margin-left: 1.5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'VT323', monospace;
+  font-size: 50px;
+  color: white;
+}
+
+#win, #gameover, #exit {
+  display: block;
+  text-align: center;
+  margin-top: 5.4%;
+  margin-bottom: 0;
+  font-family: 'VT323', monospace;
+  font-size: 150px;
+  color: white;
+}
+
+.load {
+  margin-left: 1.5%;
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+.under_load {
+  display: inline-block;
+  margin: 0;
+  font-family: 'VT323', monospace;
+  font-size: 50px;
+  color: white;
+}
+
+.under_load:hover {
+  background: -webkit-linear-gradient(60deg, #ff891b, #ea322c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}

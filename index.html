@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="game.css">
+  <link rel="stylesheet" href="webfontkit-Ailerons/stylesheet.css" type="text/css" charset="utf-8"/>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <script src="starfield.js" defer></script>
+  <script src="menu.js" defer></script>
+  <title> Starman </title>
+
+</head>
+
+<body>
+
+  <canvas id='starfieldCanvas' width='1920' height='937'>
+  </canvas>
+
+  <nav>
+    <div class="container">
+  		<div class="hamburger">
+  			<div class="line1 gradient1m"></div>
+  			<div class="line2 gradient1m"></div>
+  			<div class="line3 gradient1m"></div>
+  		</div>
+  	</div>
+  </nav>
+
+  <section class='home active'>
+    <div class="content">
+      <p class="title gradient1"> Starman </p>
+      <div class="description">
+        <!-- <p class="p gradient"> Hi, </p> -->
+        <p class="p gradient1"> Welcome to an other worldly experience. </p>
+      </div>
+    </div>
+  </section>
+
+  <section class='menu'>
+    <div class="links">
+      <div class="tmp">
+        <p class="a lhome gradient1"> Home </p>
+      </div>
+      <div class="tmp">
+        <p class="a lspaceinvaders gradient1"> Space Invaders </p>
+      </div>
+      <div class="tmp">
+        <p class="a labout gradient1"> About </p>
+      </div>
+      <div class="tmp">
+        <p class="a lcontact gradient1"> Contact </p>
+      </div>
+    </div>
+  </section>
+
+  <section class='spaceinvaders'>
+    <div id="background">
+      <img id="hero" src="assets/rocket.png" style="display: none;">
+      <div id="missiles"> </div>
+      <div id="enemies"> </div>
+    </div>
+    <div class="load">
+      <p class="under_load"> START NEW GAME </p>
+    </div>
+    <p id="score"> </p>
+    <p id="gameover"> </p>
+    <p id="win"> </p>
+    <p id="exit"> </p>
+    <script src="loader.js" defer></script>
+    <script src="game.js" defer></script>
+  </section>
+
+  <section class='about'>
+    <div class="content">
+      <p class="title2 gradient3"> About </p>
+      <div class="description2">
+        <p class="p2 gradient3"> Hi, <br> <br> We are students at l'X and we have created this website for our CSE104 course. <br> <br> As eternal dreamers, we shot for the stars, explored space, and killed aliens along the way. </p>
+      </div>
+    </div>
+    <img class = "moon" src="website/moon.png" alt="Moon">
+  </section>
+
+  <section class='contact'>
+    <div class="content">
+      <p class="title3 gradient2"> Contact us </p>
+      <div class="description3">
+        <p class="p3 gradient2"> makram.loughman@polytechnique.edu <br>sonal.sannigrahi@polytechnique.edu<br> </p>
+      </div>
+    </div>
+    <img class = "mars" src="website/mars.png" alt="Mars">
+  </section>
+
+</body>
+
+</html>
